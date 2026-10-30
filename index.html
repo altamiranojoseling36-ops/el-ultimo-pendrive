@@ -4,17 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Último Pendrive</title>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>El Último Pendrive</title>
-    <!-- CONEXIÓN CON CSS -->
+    <!-- CONEXIÓN CON TU CSS -->
     <link rel="stylesheet" href="css/estilos.css">
-
 </head>
 <body>
  
-    <!-- MENÚ DE NAVEGACIÓN -->
+    <!-- ========================================== -->
+    <!-- CAPA 1: MENÚ DE NAVEGACIÓN                -->
+    <!-- ========================================== -->
     <nav class="navbar">
         <a href="#inicio">Inicio</a>
         <a href="#hallazgo">El Hallazgo</a>
@@ -23,7 +20,12 @@
         <a href="#desenlace">Final</a>
     </nav>
  
-    <!-- SECCIÓN 1: PORTADA PRINCIPAL -->
+ 
+ 
+ 
+    <!-- ========================================== -->
+    <!-- CAPA 2: SECCIÓN 1 - PORTADA PRINCIPAL      -->
+    <!-- ========================================== -->
     <header id="inicio" class="hero-section">
         <div class="hero-content">
             <span class="hero-badge">System Status: Online</span>
@@ -33,9 +35,44 @@
         </div>
     </header>
  
-    <!-- CONEXIÓN CON JAVASCRIPT -->
+ 
+ 
+ 
+    <!-- ========================================== -->
+    <!-- CAPA 3: SECCIÓN 2 - EL HALLAZGO (ESCENA 1) -->
+    <!-- ========================================== -->
+    <section id="hallazgo" class="scene-section">
+        <div class="container">
+            <div class="scene-card">
+                <h2>Escena 1: El Hallazgo Misterioso</h2>
+                <p>Sam se encontraba ordenando el laboratorio de cómputo del colegio al final de las clases. Mientras limpiaba los estantes viejos del fondo, un destello metálico entre el polvo llamó su atención.</p>
+                <p>Al acercarse, descubrió una llave malla (pendrive) con un diseño grabado muy extraño y futurista que nunca antes había visto. Llevado por su gran curiosidad, Sam decidió conectarlo a la computadora central a ver qué contenía... sin imaginar el peligro que estaba por desatar.</p>
+                <a href="#alerta" class="btn-next">Siguiente Escena ➡️</a>
+            </div>
+        </div>
+    </section>
+ 
+ 
+ 
+ 
+    <!-- ========================================== -->
+    <!-- CAPA 4: SECCIÓN 3 - LA ALERTA (ESCENA 2)   -->
+    <!-- ========================================== -->
+    <section id="alerta" class="scene-section alert-bg">
+        <div class="container">
+            <div class="scene-card alert-card">
+                <h2>Escena 2: La Alerta Roja</h2>
+                <p>En el segundo en que Sam conectó el pendrive, los ventiladores de las computadoras empezaron a sonar ruidosamente y las luces del laboratorio parpadearon. Una gigantesca pantalla roja bloqueó el sistema del colegio.</p>
+                <p class="danger-text">¡Era un virus destructivo! Se ha detectado un malware de origen desconocido. Apagado total de servidores en progreso... Tiempo restante: 09:59.</p>
+                <a href="#codigo" class="btn-next btn-danger">Buscar Código de Emergencia 🔍</a>
+            </div>
+        </div>
+    </section>
+ 
+ 
+ 
+ 
+    <!-- CONEXIÓN CON TU JAVASCRIPT -->
     <script src="js/script.js"></script>
-</body>
-
 </body>
 </html>
