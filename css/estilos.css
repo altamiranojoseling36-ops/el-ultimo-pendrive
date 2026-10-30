@@ -1,3 +1,6 @@
+/* =================================================== */
+/* 1. RESETEO Y FONDO OSCURO PRINCIPAL                */
+/* =================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -5,18 +8,22 @@
 }
  
 body {
-    background-color: #121212;
-    color: #ffffff;
+    background-color: #121212; /* Tu gris muy oscuro de base */
+    color: #ffffff;            /* Texto blanco amigable */
     font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
+    padding-top: 60px;         /* Espacio para que el menú fijo no tape el título */
 }
  
 h1, h2, h3 {
     font-family: 'Courier New', Consolas, monospace;
-    color: #39FF14;
+    color: #39FF14;            /* Verde Neón para títulos */
     margin-bottom: 15px;
 }
  
+/* =================================================== */
+/* 2. MENÚ DE NAVEGACIÓN FIJO                         */
+/* =================================================== */
 .navbar {
     position: fixed;
     top: 0;
@@ -39,5 +46,95 @@ h1, h2, h3 {
 }
  
 .navbar a:hover {
-    color: #00E5FF;
+    color: #00E5FF; /* Azul eléctrico al pasar el mouse */
 }
+ 
+/* =================================================== */
+/* 3. LÍNEAS DIVISORIAS ENTRE ESCENAS                 */
+/* =================================================== */
+.scene-section {
+    padding: 60px 20px;
+    border-bottom: 3px dashed #39FF14; /* Línea divisoria verde neón entre escenas */
+}
+ 
+.hero-section {
+    padding: 100px 20px;
+    text-align: center;
+    border-bottom: 3px dashed #39FF14;
+}
+ 
+/* =================================================== */
+/* 4. MÁGICA CAJITA CON TEXTO A UN LADO E IMAGEN AL OTRO */
+/* =================================================== */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+ 
+.scene-card {
+    background-color: #000000;    /* Caja color negro puro */
+    border: 2px solid #00E5FF;    /* Borde azul eléctrico brillante */
+    border-radius: 8px;           /* Bordes redondeados estéticos */
+    padding: 30px;
+    display: flex;                /* ACTIVA FLEXBOX */
+    flex-direction: row;          /* Pone los elementos en fila (lado a lado) */
+    align-items: center;
+    gap: 30px;                    /* Espacio de separación entre el texto y la imagen */
+    box-shadow: 0 0 15px rgba(0, 229, 255, 0.2); /* Brillo neón sutil alrededor de la caja */
+}
+ 
+/* Hace que el texto use la mitad del espacio de la caja */
+.scene-card div, .scene-card p {
+    flex: 1;
+}
+ 
+/* Diseña las imágenes para que se acomoden perfectamente a un lado */
+.scene-img {
+    flex: 1;
+    max-width: 450px;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 2px solid #39FF14;    /* Marco verde neón para la imagen */
+}
+ 
+/* =================================================== */
+/* 5. ESTILOS DE BOTONES INTERACTIVOS Y CRÉDITOS        */
+/* =================================================== */
+.btn-neon, .btn-next, .btn-interact, .btn-restart {
+    display: inline-block;
+    background-color: #39FF14;
+    color: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+ 
+.btn-neon:hover, .btn-next:hover, .btn-interact:hover {
+    transform: scale(1.05);       /* Hace el botón un poquito más grande al tocarlo */
+    background-color: #00E5FF;    /* Cambia a azul eléctrico al pasar el mouse */
+}
+ 
+.pista-box {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #121212;
+    border: 1px solid #39FF14;
+    color: #39FF14;
+    font-family: 'Courier New', monospace;
+}
+ 
+.project-credits {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+    color: #888;
+}
+ 

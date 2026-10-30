@@ -10,7 +10,7 @@
 <body>
  
     <!-- ========================================== -->
-    <!-- CAPA 1: MENÚ DE NAVEGACIÓN                -->
+    <!-- CAPA 1: MENÚ DE NAVEGACIÓN FIJO            -->
     <!-- ========================================== -->
     <nav class="navbar">
         <a href="#inicio">Inicio</a>
@@ -44,10 +44,15 @@
     <section id="hallazgo" class="scene-section">
         <div class="container">
             <div class="scene-card">
-                <h2>Escena 1: El Hallazgo Misterioso</h2>
-                <p>Sam se encontraba ordenando el laboratorio de cómputo del colegio al final de las clases. Mientras limpiaba los estantes viejos del fondo, un destello metálico entre el polvo llamó su atención.</p>
-                <p>Al acercarse, descubrió una llave malla (pendrive) con un diseño grabado muy extraño y futurista que nunca antes había visto. Llevado por su gran curiosidad, Sam decidió conectarlo a la computadora central a ver qué contenía... sin imaginar el peligro que estaba por desatar.</p>
-                <a href="#alerta" class="btn-next">Siguiente Escena ➡️</a>
+                <!-- LADO IZQUIERDO: TEXTOS -->
+                <div class="text-side">
+                    <h2>Escena 1: El Hallazgo Misterioso</h2>
+                    <p>Sam se encontraba ordenando el laboratorio de cómputo del colegio al final de las clases. Mientras limpiaba los estantes viejos del fondo, un destello metálico entre el polvo llamó su atención.</p>
+                    <p>Al acercarse, descubrió una llave malla (pendrive) con un diseño grabado muy extraño y futurista que nunca antes había visto. Llevado por su gran curiosidad, Sam decidió conectarlo a la computadora central a ver qué contenía... sin imaginar el peligro que estaba por desatar.</p>
+                    <a href="#alerta" class="btn-next">Siguiente Escena ➡️</a>
+                </div>
+                <!-- LADO DERECHO: IMAGEN -->
+                <img src="img\Screenshot 2026-10-29 203628.png" alt="Laboratorio de cómputo antiguo" class="scene-img">
             </div>
         </div>
     </section>
@@ -58,48 +63,81 @@
     <!-- ========================================== -->
     <!-- CAPA 4: SECCIÓN 3 - LA ALERTA (ESCENA 2)   -->
     <!-- ========================================== -->
-    <section id="alerta" class="scene-section alert-bg">
+    <section id="alerta" class="scene-section">
         <div class="container">
-            <div class="scene-card alert-card">
-                <h2>Escena 2: La Alerta Roja</h2>
-                <p>En el segundo en que Sam conectó el pendrive, los ventiladores de las computadoras empezaron a sonar ruidosamente y las luces del laboratorio parpadearon. Una gigantesca pantalla roja bloqueó el sistema del colegio.</p>
-                <p class="danger-text">¡Era un virus destructivo! Se ha detectado un malware de origen desconocido. Apagado total de servidores en progreso... Tiempo restante: 09:59.</p>
-                <a href="#codigo" class="btn-next btn-danger">Buscar Código de Emergencia 🔍</a>
+            <div class="scene-card">
+                <!-- LADO IZQUIERDO: TEXTOS -->
+                <div class="text-side">
+                    <h2>Escena 2: La Alerta Roja</h2>
+                    <p>En el segundo en que Sam conectó el pendrive, los ventiladores de las computadoras empezaron a sonar ruidosamente y las luces del laboratorio parpadearon. Una gigantesca pantalla roja bloqueó el sistema del colegio.</p>
+                    <p class="danger-text" style="color: #ff3333; font-weight: bold;">¡Era un virus destructivo! Se ha detectado un malware de origen desconocido. Apagado total de servidores en progreso... Tiempo restante: 09:59.</p>
+                    <a href="#codigo" class="btn-next">Buscar Código de Emergencia 🔍</a>
+                </div>
+                <!-- LADO DERECHO: IMAGEN -->
+                <img src="img\Screenshot 2026-10-29 203805.png" alt="Pantalla con código de virus" class="scene-img">
             </div>
         </div>
     </section>
  
  
  
- 
-    <!-- CONEXIÓN CON TU JAVASCRIPT -->
-    <script src="js/script.js"></script>
-
-
-
  
     <!-- ========================================== -->
     <!-- CAPA 5: SECCIÓN 4 - EL CÓDIGO (ESCENA 3)   -->
     <!-- ========================================== -->
     <section id="codigo" class="scene-section">
         <div class="container">
-            <div class="scene-card terminal-card">
-                <h2>Escena 3: Descifrar el Código</h2>
-                <p>Sam mantiene la calma. Sabe que todo virus tiene un punto débil. Al inspeccionar las líneas de código de la terminal infectada, encuentra un algoritmo de encriptación bloqueado.</p>
-                <p>Solo necesita activar el desencriptador de emergencia del laboratorio para revelar la clave de salvación.</p>
-                
-                <!-- BOTÓN INTERACTIVO DE JAVASCRIPT -->
-                <button onclick="descifrarCodigo()" class="btn-interact">Descifrar Código de Emergencia 🔓</button>
-                
-                <!-- CONTENEDOR DONDE JAVASCRIPT CORRERÁ LA MAGIA -->
-                <div id="pista-oculta" class="pista-box" style="display: none;"></div>
- 
-                <br><br>
-                <a href="#desenlace" class="btn-next">Ir al Desenlace final ➡️</a>
+            <div class="scene-card">
+                <!-- LADO IZQUIERDO: TEXTOS -->
+                <div class="text-side">
+                    <h2>Escena 3: Descifrar el Código</h2>
+                    <p>Sam mantiene la calma. Sabe que todo virus tiene un punto débil. Al inspeccionar las líneas de código de la terminal infectada, encuentra un algoritmo de encriptación bloqueado.</p>
+                    <p>Solo necesita activar el desencriptador de emergencia del laboratorio para revelar la clave de salvación.</p>
+                    
+                    <button onclick="descifrarCodigo()" class="btn-interact">Descifrar Código de Emergencia 🔓</button>
+                    <div id="pista-oculta" class="pista-box" style="display: none;"></div>
+                    <br><br>
+                    <a href="#desenlace" class="btn-next">Ir al Desenlace final ➡️</a>
+                </div>
+                <!-- LADO DERECHO: IMAGEN -->
+                <img src="img\imagen encriptacion.jpg" alt="Desencriptador de código" class="scene-img">
             </div>
         </div>
     </section>
-
-
+ 
+ 
+ 
+ 
+    <!-- ========================================== -->
+    <!-- CAPA 6: SECCIÓN 5 - EL DESENLACE (FINAL)   -->
+    <!-- ========================================== -->
+    <section id="desenlace" class="scene-section">
+        <div class="container">
+            <div class="scene-card">
+                <!-- LADO IZQUIERDO: TEXTOS -->
+                <div class="text-side">
+                    <h2>¡Éxito Total! Aventura Completada</h2>
+                    <p>Al ingresar los caracteres <strong>SAFE_MODE_2026</strong> en la terminal, las alertas rojas desaparecieron instantáneamente y los servidores del laboratorio volvieron a la normalidad.</p>
+                    <p>Sam suspiró aliviado mientras guardaba el pendrive misterioso en su mochila. El sistema del colegio estaba a salvo por ahora, pero Sam sabía que este era solo el inicio de sus aventuras en el mundo del código.</p>
+                    
+                    <a href="#inicio" class="btn-restart">🔄 Volver al Inicio</a>
+ 
+                    <!-- CRÉDITOS DEL PROYECTO AL PURO FINAL -->
+                    <footer class="project-credits">
+                        <p><strong>Proyecto de Programación Web & Diseño de Software</strong></p>
+                        <p>Estudiante: Joselyn Junieth Altamirano Lanza</p>
+                        <p>Sección: 10-3 | Año: 2026</p>
+                    </footer>
+                </div>
+                <!-- LADO DERECHO: IMAGEN -->
+                <img src="img\Screenshot 2026-10-29 203628.png" alt="Servidores restaurados" class="scene-img">
+            </div>
+        </div>
+    </section>
+ 
+    <!-- CONEXIÓN CON TU JAVASCRIPT -->
+    <script src="js/script.js"></script>
 </body>
 </html>
+ 
+ 
